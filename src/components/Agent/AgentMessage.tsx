@@ -5,8 +5,11 @@ import { FC } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { translate } from '../../utils/translate';
 =======
+=======
+>>>>>>> ae1b6f2 (Revert ":globe_with_meridians: :flags: i18n integration")
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 >>>>>>> f3af6f5 (Display search logs in the execution results)
@@ -59,9 +62,13 @@ const AgentMessage: FC<AgentMessageProps> = ({ message }) => {
         )}
         {message.type === 'session-summary' ? (
           <details>
+<<<<<<< HEAD
             <summary className="pt-0.5 text-lg font-bold">
               {translate("SUMMARY", "common")}
             </summary>
+=======
+            <summary className="pt-0.5 text-lg font-bold">Summary</summary>
+>>>>>>> ae1b6f2 (Revert ":globe_with_meridians: :flags: i18n integration")
             {contents}
           </details>
         ) : (

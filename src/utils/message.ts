@@ -1,5 +1,4 @@
 import { AgentStatus, Message, MessageType, ToolType } from '@/types';
-import { translate } from './translate';
 
 export const setupMessage = (
   type: MessageType,
@@ -45,22 +44,23 @@ export const setupMessage = (
 
   const title =
     type === 'objective'
-      ? translate('OBJECTIVE', 'message')
+      ? 'Objective'
       : type === 'task-list'
-      ? translate('TASK_LIST', 'message')
+      ? 'Task List'
       : type === 'next-task'
-      ? translate('NEXT_TASK', 'message')
+      ? 'Next Task'
       : type === 'task-result'
-      ? translate('TASK_RESULT', 'message')
+      ? 'Task Result'
       : type === 'task-output'
-      ? translate('TASK_OUTPUT', 'message')
+      ? 'Task Output'
       : type === 'task-result-summary'
-      ? translate('TASK_RESULT_SUMMARY', 'message')
+      ? 'Task Result Summary'
       : type === 'loading'
-      ? translate('LOADING', 'message')
+      ? 'Loading'
       : type === 'end-of-iterations'
-      ? translate('END_OF_ITERATIONS', 'message')
+      ? 'End of Iterations'
       : type === 'session-summary'
+<<<<<<< HEAD
 <<<<<<< HEAD
       ? translate('SESSION_SUMMARY', 'message')
 =======
@@ -68,10 +68,15 @@ export const setupMessage = (
       : type === 'search-logs'
       ? 'Search Logs'
 >>>>>>> f3af6f5 (Display search logs in the execution results)
+=======
+      ? 'Session Summary'
+      : type === 'search-logs'
+      ? 'Search Logs'
+>>>>>>> ae1b6f2 (Revert ":globe_with_meridians: :flags: i18n integration")
       : type === 'done'
-      ? translate('DONE', 'message')
+      ? 'Done'
       : type === 'complete'
-      ? translate('FINISHED', 'message')
+      ? 'Finished'
       : '';
 
   const bgColor =
@@ -99,10 +104,11 @@ export const getMessageText = (message: Message): string => {
 export const loadingAgentMessage = (status: AgentStatus) => {
   let text =
     status.type === 'creating'
-      ? translate('CREATING', 'message')
+      ? 'Creating tasks... (🤖💬: *This process takes time. Please wait...*)'
       : status.type === 'executing'
-      ? translate('EXECUTING', 'message')
+      ? '⚒️ Executing tasks...'
       : status.type === 'prioritizing'
+<<<<<<< HEAD
       ? translate("PRIORITIZING", "message")
       : status.type === 'saving'
       ? translate("SAVING", "message")
@@ -117,6 +123,22 @@ export const loadingAgentMessage = (status: AgentStatus) => {
       : status.type === 'managing'
       ? translate('MANAGING', 'message')
       : translate("THINKING", "message");
+=======
+      ? 'Prioritizing tasks...'
+      : status.type === 'saving'
+      ? 'Saving tasks...'
+      : status.type === 'preparing'
+      ? 'Preparing...'
+      : status.type === 'terminating'
+      ? 'Terminating...'
+      : status.type === 'updating'
+      ? '♻️ Task Updating...'
+      : status.type === 'summarizing'
+      ? '✍️ Summarizing...'
+      : status.type === 'managing'
+      ? '🗂️ Task management in progress... (🤖💬: *This process takes time. Please wait...*)'
+      : 'Thinking...';
+>>>>>>> ae1b6f2 (Revert ":globe_with_meridians: :flags: i18n integration")
 
   if (status.message) text += `\n\n${status.message}`;
 
