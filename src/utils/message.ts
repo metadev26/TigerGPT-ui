@@ -23,6 +23,8 @@ export const setupMessage = (
       ? '✅'
       : type === 'task-result-summary'
       ? '📋'
+      : type === 'search-logs'
+      ? '🌐'
       : type === 'loading'
       ? '⏳'
       : type === 'end-of-iterations'
@@ -59,7 +61,13 @@ export const setupMessage = (
       : type === 'end-of-iterations'
       ? translate('END_OF_ITERATIONS', 'message')
       : type === 'session-summary'
+<<<<<<< HEAD
       ? translate('SESSION_SUMMARY', 'message')
+=======
+      ? 'Session Summary'
+      : type === 'search-logs'
+      ? 'Search Logs'
+>>>>>>> f3af6f5 (Display search logs in the execution results)
       : type === 'done'
       ? translate('DONE', 'message')
       : type === 'complete'
