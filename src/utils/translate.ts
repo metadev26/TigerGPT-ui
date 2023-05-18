@@ -1,5 +1,9 @@
 import { i18n } from 'next-i18next';
+<<<<<<< HEAD
 //import type nextI18NextConfig from '../../next-i18next.config.js';
+=======
+import type nextI18NextConfig from '../../next-i18next.config.js';
+>>>>>>> 403332a (Revert "Revert ":globe_with_meridians: :flags: i18n integration"")
 
 type Namespace = 'common' | 'agent' | 'constants' | 'message';
 
