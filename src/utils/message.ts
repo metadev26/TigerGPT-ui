@@ -78,8 +78,12 @@ export const setupMessage = (
 =======
       ? translate('SESSION_SUMMARY', 'message')
       : type === 'search-logs'
+<<<<<<< HEAD
       ? translate("SEARCH_LOGS", "message")
 >>>>>>> 403332a (Revert "Revert ":globe_with_meridians: :flags: i18n integration"")
+=======
+      ? translate('SEARCH_LOGS', 'message')
+>>>>>>> 2d7fe49 (Fix translate func)
       : type === 'done'
       ? translate('DONE', 'message')
       : type === 'complete'

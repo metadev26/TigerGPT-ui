@@ -76,7 +76,7 @@ const AgentMessage: FC<AgentMessageProps> = ({ message }) => {
 >>>>>>> ae1b6f2 (Revert ":globe_with_meridians: :flags: i18n integration")
 =======
             <summary className="pt-0.5 text-lg font-bold">
-              {translate('SUMMARY', 'common')}
+              {translate('SUMMARY')}
             </summary>
 >>>>>>> 403332a (Revert "Revert ":globe_with_meridians: :flags: i18n integration"")
             {contents}
