@@ -16,7 +16,11 @@ import { translate } from '../../utils/translate';
 >>>>>>> 403332a (Revert "Revert ":globe_with_meridians: :flags: i18n integration"")
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+<<<<<<< HEAD
 >>>>>>> f3af6f5 (Display search logs in the execution results)
+=======
+import { AgentCollapsible } from './AgentCollapsible';
+>>>>>>> a405a0c (Add collapsible)
 
 interface AgentMessageProps {
   message: Message;
@@ -81,6 +85,10 @@ const AgentMessage: FC<AgentMessageProps> = ({ message }) => {
 >>>>>>> 403332a (Revert "Revert ":globe_with_meridians: :flags: i18n integration"")
             {contents}
           </details>
+        ) : message.status?.type === 'creating' ? (
+          <AgentCollapsible title={'Task creating...'}>
+            {contents}
+          </AgentCollapsible>
         ) : (
           contents
         )}
