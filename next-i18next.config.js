@@ -7,6 +7,7 @@ module.exports = {
   i18n: {
     defaultLocale: 'en',
 <<<<<<< HEAD
+<<<<<<< HEAD
     locales: [
       'br',
       'de',
@@ -41,6 +42,9 @@ module.exports = {
     ],
 =======
     locales: [  'br', 'ar', 'de', 'es', 'fr', 'hi', 'hu', 'ja', 'ru', 'th',  'ko', 'pt', 'id', 'it', 'uk', 'zh', 'vi', 'au', 'gb', 'lt',  'cs', 'el', 'sv', 'da', 'fi', 'no', 'tr', 'pl', 'zhtw', 'bg',  'nl', 'sk', 'ro', 'lv', 'et', 'hr', 'sl', 'sr', 'he', 'fa',  'ur', 'bn', 'gu', 'ta', 'te', 'kn', 'ml']
+=======
+    locales: ['en', 'br', 'ar', 'de', 'es', 'fr', 'hi', 'hu', 'ja', 'ru', 'th',  'ko', 'pt', 'id', 'it', 'uk', 'zh', 'vi', 'au', 'gb', 'lt',  'cs', 'el', 'sv', 'da', 'fi', 'no', 'tr', 'pl', 'zhtw', 'bg',  'nl', 'sk', 'ro', 'lv', 'et', 'hr', 'sl', 'sr', 'he', 'fa', 'ur', 'bn', 'gu', 'ta', 'te', 'kn', 'ml']
+>>>>>>> f5cfa08 ([fix] missing 'en' in defaultLocales)
 ,
 >>>>>>> e1608cd (FULL RTL SUPPORT AND MORE LANGUAGES)
   },
