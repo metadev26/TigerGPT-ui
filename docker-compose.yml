@@ -1,14 +1,14 @@
 version: '3'
 
 services:
-  babyagi-ui:
+  TigerGPT-ui:
     build: .
-    container_name: babyagi-ui
+    container_name: TigerGPT-ui
     environment:
       - OPENAI_API_KEY=""
       - PINECONE_API_KEY=""
       - PINECONE_ENVIRONMENT=""
-      - NEXT_PUBLIC_TABLE_NAME="baby-agi-test-table"
+      - NEXT_PUBLIC_TABLE_NAME="tiger-gpt-test-table"
       - NEXT_PUBLIC_USE_USER_API_KEY="true"
       - SEARP_API_KEY=""
     ports:
