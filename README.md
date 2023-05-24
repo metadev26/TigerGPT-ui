@@ -1,9 +1,9 @@
-# 👶🤖🖥️ TigerGPT UI
+# 👶TigerGPT UI
 
 TigerGPT UI is designed to make it easier to run and develop with [TigerGPT](https://github.com/yoheinakajima/TigerGPT) in a web app, like a ChatGPT.
 This is a port of [TigerGPT](https://github.com/yoheinakajima/TigerGPT) with [Langchain.js](https://github.com/hwchase17/langchainjs) and build a user interface.
 
-![](./public/screenshot-230515.png)
+
 
 ## 🧰 Stack
 
